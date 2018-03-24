@@ -92,7 +92,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h1 class="display-4">Whatsapp <img width="30px" style="vertical-align:middle" src="whatsapp-logo.png"> Dox</h1>
     </div>
 
-    <p class="font-weight-light">Just another phone number lookup for Whatsapp, focusing on simplicity.</p>
+    <p class="font-weight-light">Just another phone number lookup for Whatsapp, focusing on simplicity and privacy. <strong>No</strong> personal data is collected.</p>
 
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
         <div class="form-group">
