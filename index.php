@@ -80,10 +80,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     gtag('config', 'UA-59106660-7');
     </script>
 
-
-    <!-- <script src="main.js"></script> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.0-beta/css/bootstrap-select.min.css">
+
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -95,15 +94,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </button>
     </div>
     <div>
-        <h1 class="display-4">Whatsapp <img width="30px" style="vertical-align:middle" src="whatsapp-logo.png"> Dox</h1>
+        <h1 class="display-4">Whatsapp <img width="35px" style="vertical-align:middle" src="whatsapp-logo.png"> Dox</h1>
     </div>
 
-    <p class="font-weight-light">Just another phone number lookup for Whatsapp, focusing on simplicity and privacy. No personal data is collected.</p>
+    <p class="font-weight-light">Just another phone number lookup for Whatsapp, built for simplicity and privacy. No personal data is collected.</p>
 
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
         <div class="form-group">
             <label for="countryCode">Country code</label>
-            <select class="form-control" id="countryCode" name="countryCode">
+            <select class="selectpicker form-control" data-live-search="true" id="countryCode" name="countryCode">
                 <option data-countryCode="MY" value="6" Selected>Malaysia (+6)</option>
                 <option data-countryCode="ID" value="62">Indonesia (+62)</option>
                 <optgroup label="Other countries">
@@ -327,7 +326,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
         <div class="form-group">
-            <label for="phoneNumber">Number</label>
+            <label for="phoneNumber">Number (without country code)</label>
             <input class="form-control" type="number" id="phoneNumber" name="number" placeholder="0132746273">
             <small><i><?php echo $errorMsg; ?></i></small>
         </div>
@@ -347,6 +346,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.0-beta/js/bootstrap-select.min.js"></script>
 </body>
 </html>
