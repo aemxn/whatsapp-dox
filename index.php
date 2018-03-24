@@ -88,11 +88,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
 <div class="container">
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+    On mobile? Add this website to your <strong>home screen</strong> for faster access! See your browser settings for <code>Add to Home screen</code> button.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
     <div>
         <h1 class="display-4">Whatsapp <img width="30px" style="vertical-align:middle" src="whatsapp-logo.png"> Dox</h1>
     </div>
 
-    <p class="font-weight-light">Just another phone number lookup for Whatsapp, focusing on simplicity and privacy. <strong>No</strong> personal data is collected.</p>
+    <p class="font-weight-light">Just another phone number lookup for Whatsapp, focusing on simplicity and privacy. No personal data is collected.</p>
 
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
         <div class="form-group">
@@ -340,5 +346,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 </div>
 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
