@@ -30,9 +30,56 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Whatsapp Dox</title>
+
+	<meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+	<meta name="description" content="Whatsapp phone number lookup" />
+    <link rel="shortcut icon" href="/favicon-32x32.png" type="image/png" />
+    <link rel="canonical" href="http://aimanbaharum.com/whatsapp-dox" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    
+    <meta property="og:site_name" content="Whatsapp Dox" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Whatsapp Dox" />
+    <meta property="og:description" content="Whatsapp phone number lookup" />
+    <meta property="og:url" content="http://aimanbaharum.com/whatsapp-dox" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Whatsapp Dox" />
+    <meta name="twitter:description" content="Whatsapp phone number lookup" />
+    <meta name="twitter:url" content="http://aimanbaharum.com/whatsapp-dox" />
+    <meta name="twitter:site" content="@_aimanb" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Website",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Whatsapp Dox",
+        "logo": "http://aimanbaharum.com/whatsapp-dox/whatsapp-logo.png"
+    },
+    "url": "http://aimanbaharum.com/whatsapp-dox",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://aimanbaharum.com/whatsapp-dox"
+    },
+    "description": "Whatsapp phone number lookup"
+}
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59106660-7"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-59106660-7');
+    </script>
+
 
     <!-- <script src="main.js"></script> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -288,7 +335,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </form>
 
     <div class="footer">
-        <small class="font-weight-light"><a target="_blank" href="http://aimanbaharum.com/">Aiman Baharum</a> (2018) · <a target="_blank" href="https://github.com/aimanbaharum/whatsapp-dox">Source</a></small>
+        <small class="font-weight-light"><a target="_blank" href="http://aimanbaharum.com/">Aiman Baharum</a> (2018) &middot; <a target="_blank" href="https://github.com/aimanbaharum/whatsapp-dox">Source</a> &middot; <strong>Bitcoin:</strong> 197iP4SAc4LTPeCNVTnNhBADsmfSjvWTNL</small>
     </div>
 
 </div>
