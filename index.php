@@ -5,8 +5,19 @@
  * - pretty url
  * - post method
  */
+require_once('Logging.php');
 
- $errorMsg = '';
+$errorMsg = '';
+
+$log = new Logging();
+// $file = '/var/www/html/shitstorm-twitter/cron.log';
+$file = 'counts.txt';
+$log->lfile($file);
+
+$counts = 0;
+
+$readfile = $log->lread();
+$rowcount = count($readfile);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!empty($_POST["number"])) {
@@ -16,9 +27,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $apiString = $countryCode . $number . "&text=" . rawurlencode($customMessage);
 
+        $log->lwrite($rowcount++);
+        $log->lclose();
+
         header("Location: https://api.whatsapp.com/send?phone=" . $apiString . "");
         die();
     } else {
+        $log->lclose();
         $errorMsg = "This field is required";
     }
 }
@@ -336,7 +351,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <textarea class="form-control" name="customMessage" id="customMessage" rows="3"></textarea>
         </div>
 
-        <button class="btn btn-outline-dark" type="submit" name="submit">Peek-a-boo</button>
+        <button class="btn btn-outline-dark" type="submit" name="submit">Peek-a-boo</button> <small class="font-weight-light"><i><?php echo $rowcount; ?> numbers peeked</i></small>
     </form>
 
     <div class="footer">
