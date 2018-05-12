@@ -10,8 +10,8 @@ require_once('Logging.php');
 $errorMsg = '';
 
 $log = new Logging();
-// $file = '/var/www/html/shitstorm-twitter/cron.log';
-$file = 'counts.txt';
+$file = '/var/www/html/aimanbaharum.com/whatsapp-dox/counts.txt';
+//$file = 'counts.txt';
 $log->lfile($file);
 
 $counts = 0;
