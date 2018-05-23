@@ -27,7 +27,7 @@ class Logging {
         // (don't forget to set the INI setting date.timezone)
         $time = @date('[d/M/Y H:i:s]');
         // write current time, script name and message to the log file
-        fwrite($this->fp, "$time ($script_name) $message" . PHP_EOL);
+        fwrite($this->fp, "$time: $message" . PHP_EOL);
     }
     // close log file (it's always a good idea to close a file when you're done with it)
     public function lclose() {
@@ -45,6 +45,11 @@ class Logging {
         }
         $array = explode(PHP_EOL, $string);
         return $array;
+    }
+    // returns file content row count
+    public function lcount() {
+        $readfile = $this->lread();
+        return count($readfile);
     }
     // open log file (private method)
     private function lopen() {

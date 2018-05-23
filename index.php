@@ -11,23 +11,21 @@ $errorMsg = '';
 
 $log = new Logging();
 $file = '/var/www/html/aimanbaharum.com/whatsapp-dox/counts.txt';
-//$file = 'counts.txt';
+// $file = 'counts.txt';
 $log->lfile($file);
 
-$counts = 0;
-
-$readfile = $log->lread();
-$rowcount = count($readfile);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!empty($_POST["number"])) {
         $number = $_POST['number'];
         $countryCode = $_POST['countryCode'];
+        // $count = $_POST['rowcount'];
         $customMessage = htmlspecialchars($_POST['customMessage']);
 
         $apiString = $countryCode . $number . "&text=" . rawurlencode($customMessage);
 
-        $log->lwrite($rowcount++);
+        $count = $log->lcount();
+        $log->lwrite($count++);
         $log->lclose();
 
         header("Location: https://api.whatsapp.com/send?phone=" . $apiString . "");
@@ -113,6 +111,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 
     <p class="font-weight-light">Just another phone number lookup for Whatsapp, built for simplicity and privacy. No personal data is collected.</p>
+
+    <hr/>
 
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
         <div class="form-group">
@@ -351,8 +351,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <textarea class="form-control" name="customMessage" id="customMessage" rows="3"></textarea>
         </div>
 
-        <button class="btn btn-outline-dark" type="submit" name="submit">Peek-a-boo</button> <small class="font-weight-light"><i><?php echo $rowcount; ?> numbers peeked</i></small>
+        <button class="btn btn-outline-dark" type="submit" name="submit">Peek-a-boo</button> 
+        <small class="font-weight-light"><span class="badge badge-dark"><?php echo $log->lcount(); ?></span></i> numbers peeked</small>
     </form>
+
+    <hr/>
 
     <div class="footer">
         <small class="font-weight-light"><a target="_blank" href="http://aimanbaharum.com/">Aiman Baharum</a> (2018) &middot; <a target="_blank" href="https://github.com/aimanbaharum/whatsapp-dox">Source</a> &middot; <strong>Bitcoin:</strong> 197iP4SAc4LTPeCNVTnNhBADsmfSjvWTNL</small>
