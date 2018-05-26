@@ -342,7 +342,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <div class="form-group">
             <label for="phoneNumber">Number (without country code)</label>
-            <input class="form-control" type="number" id="phoneNumber" name="number" placeholder="0132746273">
+            <input class="form-control" type="text" id="phoneNumber" name="number" placeholder="0132746273">
             <small><i><?php echo $errorMsg; ?></i></small>
         </div>
 
@@ -367,5 +367,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.0-beta/js/bootstrap-select.min.js"></script>
+
+<script>
+var $form = $("form");
+var $input = $form.find("input#phoneNumber");
+
+$input.on( "keyup", function( event ) {
+    var selection = window.getSelection().toString();
+    
+    if (selection !== '') {
+        return;
+    }
+
+    if ($.inArray(event.keyCode, [38,40,37,39] ) !== -1) {
+        return;
+    }
+
+    var $this = $(this);
+    var input = $this.val();
+
+    var input = input.replace(/[\D\s\._\-]+/g, "");
+
+    $this.val(function() {
+        return input;
+    } );
+} );
+</script>
 </body>
 </html>
