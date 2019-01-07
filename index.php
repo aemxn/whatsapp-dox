@@ -358,7 +358,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <hr/>
 
     <div class="footer">
-        <small class="font-weight-light"><a target="_blank" href="http://aimanbaharum.com/">Aiman Baharum</a> (2018) &middot; <a target="_blank" href="https://github.com/aimanbaharum/whatsapp-dox">Source</a> &middot; <strong>Bitcoin:</strong> 197iP4SAc4LTPeCNVTnNhBADsmfSjvWTNL</small>
+        <small class="font-weight-light"><a target="_blank" href="http://aimanbaharum.com/">Aiman Baharum</a> (2019) &middot; <a target="_blank" href="https://github.com/aimanbaharum/whatsapp-dox">Source</a> &middot; <strong>Bitcoin:</strong> 197iP4SAc4LTPeCNVTnNhBADsmfSjvWTNL</small>
     </div>
 
 </div>
