@@ -63,8 +63,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="twitter:title" content="Whatsapp Dox" />
     <meta name="twitter:description" content="Whatsapp phone number lookup" />
     <meta name="twitter:url" content="http://aimanbaharum.com/whatsapp-dox" />
-    <meta name="twitter:site" content="@_aimanb" />
-    
     <script type="application/ld+json">
 {
     "@context": "https://schema.org",
@@ -110,7 +108,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h1 class="display-4">Whatsapp <img width="35px" style="vertical-align:middle" src="whatsapp-logo.png"> Dox</h1>
     </div>
 
-    <p class="font-weight-light">Just another phone number lookup for Whatsapp, built for simplicity and privacy. No personal data is collected.</p>
+    <p class="font-weight-light">Just another phone number lookup for Whatsapp, built for simplicity and privacy. No personal data is collected.
 
     <hr/>
 
@@ -358,7 +356,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <hr/>
 
     <div class="footer">
-        <small class="font-weight-light"><a target="_blank" href="http://aimanbaharum.com/">Aiman Baharum</a> (2019) &middot; <a target="_blank" href="https://github.com/aimanbaharum/whatsapp-dox">Source</a> &middot; <strong>Bitcoin:</strong> 197iP4SAc4LTPeCNVTnNhBADsmfSjvWTNL</small>
+        <small class="font-weight-light"><a target="_blank" href="https://aexmn.xyz/">Aiman</a> (2020) &middot; <a target="_blank" href="https://github.com/aemxn/whatsapp-dox">Source</a></small>
     </div>
 
 </div>
