@@ -356,7 +356,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <hr/>
 
     <div class="footer">
-        <small class="font-weight-light"><a target="_blank" href="https://aexmn.xyz/">Aiman</a> (2020) &middot; <a target="_blank" href="https://github.com/aemxn/whatsapp-dox">Source</a></small>
+        <small class="font-weight-light"><a target="_blank" href="https://aemxn.xyz/">Aiman</a> (2020) &middot; <a target="_blank" href="https://github.com/aemxn/whatsapp-dox">Source</a></small>
     </div>
 
 </div>
