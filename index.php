@@ -10,7 +10,7 @@ require_once('Logging.php');
 $errorMsg = '';
 
 $log = new Logging();
-$file = '/var/www/html/aimanbaharum.com/whatsapp-dox/counts.txt';
+$file = '/var/www/html/dir.aemxn.xyz/whatsapp-dox/counts.txt';
 // $file = 'counts.txt';
 $log->lfile($file);
 
@@ -51,18 +51,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 	<meta name="description" content="Whatsapp phone number lookup" />
     <link rel="shortcut icon" href="favicon-32x32.png" type="image/png" />
-    <link rel="canonical" href="http://aimanbaharum.com/whatsapp-dox" />
+    <link rel="canonical" href="https://dir.aemxn.xyz/whatsapp-dox" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
     
     <meta property="og:site_name" content="Whatsapp Dox" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Whatsapp Dox" />
     <meta property="og:description" content="Whatsapp phone number lookup" />
-    <meta property="og:url" content="http://aimanbaharum.com/whatsapp-dox" />
+    <meta property="og:url" content="https://dir.aemxn.xyz/whatsapp-dox" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Whatsapp Dox" />
     <meta name="twitter:description" content="Whatsapp phone number lookup" />
-    <meta name="twitter:url" content="http://aimanbaharum.com/whatsapp-dox" />
+    <meta name="twitter:url" content="https://dir.aemxn.xyz/whatsapp-dox" />
     <script type="application/ld+json">
 {
     "@context": "https://schema.org",
@@ -70,12 +70,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     "publisher": {
         "@type": "Organization",
         "name": "Whatsapp Dox",
-        "logo": "http://aimanbaharum.com/whatsapp-dox/whatsapp-logo.png"
+        "logo": "https://dir.aemxn.xyz/whatsapp-dox/whatsapp-logo.png"
     },
-    "url": "http://aimanbaharum.com/whatsapp-dox",
+    "url": "https://dir.aemxn.xyz/whatsapp-dox",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://aimanbaharum.com/whatsapp-dox"
+        "@id": "https://dir.aemxn.xyz/whatsapp-dox"
     },
     "description": "Whatsapp phone number lookup"
 }
